@@ -1,16 +1,19 @@
 class Calc{
+    constructor(a,b) {
+        this.a = a;
+        this.b = b;
+    }
     Plus(a,b){
-        let result = a+b;
-        return result;
+        console.log(parseInt(this.a)+parseInt(this.b))
     }
     Minus(a,b){
-        let res = parseInt(a)-parseInt(b);
+        console.log(parseInt(this.a)-parseInt(this.b))
     }
     Multiply(a,b){
-        let res = parseInt(a)*parseInt(b);
+        console.log(parseInt(this.a)*parseInt(this.b))
     }
     Split(a,b){
-        let res = parseInt(a)/parseInt(b);
+        console.log(parseInt(this.a)/parseInt(this.b));
     }
 }
 module.exports = Calc;
